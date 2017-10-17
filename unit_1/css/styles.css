@@ -1,0 +1,60 @@
+html {
+		height: 100%;
+}
+body {
+    	background-image: url('https://images.unsplash.com/photo-1487088678257-3a541e6e3922?dpr=1&auto=compress,format&fit=crop&w=667&h=&q=80&cs=tinysrgb&crop=');
+    	background-size: cover;
+    	position: center;
+}
+
+h1 {
+        font-family: Century, sans-serif;
+        font-size: 100px;
+        font-weight: bold;
+        color: #ce0c0c;
+        letter-spacing: 5px;
+        border-bottom: solid 5px #EEEEEE;
+        text-transform: uppercase;
+}
+
+h2 {
+        font-family: Century, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #EEEEEE;
+}
+h3 {
+        font-family: Georgia, serif;
+        font-size: 30px;
+        font-style: italic;
+        letter-spacing: 3px;
+        color: #EEEEEE;
+}
+p {
+        font-family: Century, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #02243a;
+        letter-spacing: .25px;
+}
+blockquote {
+    	font-family: Century, sans-serif;
+    	font-size: 30px;
+    	font-weight: bold;
+    	color: #1096b7;
+    	background: #EEEEEE;
+    	padding: 10px;
+    	margin: auto 15px;
+}
+   
+a {
+        font-family: Century, sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: #02243a;
+        border: solid 3px #EEEEEE;
+        padding: 10px;
+     /*   background: #EEEEEE;	*/
+}
