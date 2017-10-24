@@ -185,6 +185,15 @@ h1{
   font-weight: 300;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 @media screen and (max-width: 64rem){
   .col{
     width: calc(33.333333% - 2rem);
