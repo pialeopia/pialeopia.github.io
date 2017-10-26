@@ -4,10 +4,11 @@
 	-webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+/*how to do image alt in css?*/
 body {   
     background-attachment: fixed;
     background-image: url(../images/pidgy.jpg);
+    background-image: url(../images/flamingos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;	
@@ -25,9 +26,9 @@ h1 {
 	font-size: 200px;
 	letter-spacing: -15px;
 	line-height: 95px;
-	padding-top: 10%;
+	padding-top: 5vh;
     padding-bottom: 5px;
-    text-transform: uppercase;    
+    text-transform: uppercase;   
 }
 
 h2 {
@@ -47,6 +48,7 @@ h3 {
 	padding-top: 10px;
     padding-bottom: 5px;
     text-decoration: lowercase;
+    width: 85vw;
 }
 
 a {
@@ -73,7 +75,7 @@ img {
 
 main {
 	float: right;
-	padding-top: 75%;
+	padding-top: 30vh;
 	padding-bottom: 50px;
 	text-align: right;
 	width: 75%;
@@ -264,6 +266,14 @@ img {
   color: rgba(255,255,255,0.7);
   font-family: 'Montserrat';
   font-weight: 300;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 @media screen and (max-width: 64rem){
