@@ -1,0 +1,152 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*how to do image alt in css?*/
+body {   
+    background-attachment: fixed;
+    background-image: url(../images/pidgy.jpg);
+    background-image: url(../images/flamingos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	height:100%;
+	line-height: 1.5em;
+	min-height:100%;
+	width: 100%;
+}
+
+h1 {
+	background: #F36BAB;
+	color: #fff;
+	font-size: 13em;
+	letter-spacing: -5px;
+	line-height: 0.5em;
+	padding-top: 20vh;
+    text-transform: uppercase;   
+}
+
+h2 {
+	background: #972549;
+	color: #E9857C;
+	font-size: 6em;
+	line-height: 0.5em;
+    padding: 20px;
+    text-transform: uppercase;    
+}
+
+h3 {
+	background: #843B58;
+	border-bottom: solid 5px #F8D6D3;
+	border-top: solid 5px #F8D6D3;
+	font-size: 3em;
+	line-height: 0.7em;
+	margin: 10px;
+/*	padding-top: 10px;
+*/    padding-bottom: 5px;
+    text-decoration: lowercase;
+    width: 85vw;
+}
+p {
+	background: #6B2D50;
+	font-family: 'Quattrocento', serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+
+a {
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.5em;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+aside {
+	background: #682942;
+	float: left;
+}
+
+nav {
+	background: #FF5641;
+	padding: 20px;
+	text-align: right;
+}
+
+nav a {
+	text-align: right;
+	text-decoration: uppercase;
+	margin-right: 10px;
+}
+
+img {
+	background: #F87B67;
+	width: 100%;
+}
+
+main {
+	background: #B52113;
+	float: right;
+	padding-top: 30vh;
+	padding-bottom: 50px;
+	text-align: right;
+	width: 75%;
+}
+
+
+
+footer {
+	background: #9F6152;
+	padding: 20px;
+	text-align: left;
+}
+
+img {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+	padding-top: 20px;
+
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.headsup {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.gallery {
+	background: rgb(18, 1, 9);
+}
+
+.brownblock {
+	background-color: rgb( 32, 30, 31);
+}
+
+#tagline {
+	background: #F2BF91;
+	float: left;
+}
+
+#fancy {
+	font-size: 2.5em;
+}
+
+
+
+
+
