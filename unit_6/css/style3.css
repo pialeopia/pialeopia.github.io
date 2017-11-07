@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+* {
+	padding: 5px;
+	margin: 0, auto;
+	box-sizing: border-box;
+}
+
+body {
+	color: #D7D4DE;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	font-family: 'Cinzel', serif;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 10em;
+	text-align: center;
+	letter-spacing:.1em;
+}
+h2 {
+	letter-spacing: .9em;
+
+}
+
+h6 {
+	color: #3989AB;
+	font-weight: 450;
+}
+
+a {
+	color: #3989AB;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+header {
+	margin: 30px auto;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+nav {
+	display: block;
+	text-align: center;
+	margin: 20px, auto;
+}
+
+nav a {
+	width: 20%;
+	float: left;
+}
+
+a:hover {
+	background-color: #002136;
+}
+
+article {
+	margin: 0 5px;
+	padding: 10px;
+	width: 32%;
+	float: left;
+/*	background: orange;
+*/}
+
+
+footer {
+	background-color: #002136;
+	border-top: 2px solid white;
+	clear: both;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+footer p {
+	float: right;
+}
+
+ol {
+	padding-right: 20px;
+	list-style: circle;
+}
+
+li {
+	font-size: .9em;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+
+.pull {
+	display: block;
+	font-size: 1.3em;
+	margin: 5px auto;
+	padding: 10px; 
+	text-align: right;
+	width: 85%;
+
+}
+
+
+#lander{
+	background:url(../assets/adam-krowitz-386792.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 800px;
+	padding: 20px 0;
+}
+
+#wrapper {
+	padding-top: 40px;
+}

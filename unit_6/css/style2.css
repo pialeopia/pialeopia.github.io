@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+ 
+
+* {
+	padding: 5px;
+	margin: 0, auto;
+	box-sizing: border-box;
+}
+
+body {
+	color: #D7D4DE;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	font-family: 'Poiret One', cursive;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 10em;
+	text-align: center;
+	letter-spacing:.1em;
+}
+h2 {
+	letter-spacing: .9em;
+
+}
+
+h6 {
+	color: #00AB98;
+	font-weight: 450;
+}
+
+a {
+	color: #00AB98;
+	text-decoration: none;
+}
+
+header {
+	margin: 30px auto;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+nav {
+	text-align: center;
+	margin: 20px, auto;
+}
+
+nav a {
+	display: block;
+	width: 20%;
+	float: left;
+	padding: 10px 0;
+}
+
+nav a:hover {
+	background-color: #002136;
+}
+
+main {
+	width: 90%;
+	margin: auto;
+}
+
+article, aside {
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+
+footer {
+	background-color: rgba(238,238,238, 0.7);
+	border-top: 2px solid white;
+	clear: both;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+footer p {
+	float: right;
+}
+
+ol {
+	padding-right: 20px;
+	list-style: circle;
+}
+li {
+	font-size: .9em;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+
+.pull {
+	display: block;
+	font-family: 'Poiret One', cursive;
+	padding: 10px; 
+	margin: 5px auto;
+	width: 85%;
+	text-align: right;
+}
+
+#lander{
+	background:url(../assets/annie-spratt-96240.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	padding: 20px 0;
+}
+
+#wrapper {
+	padding-top: 40px;
+	width: 95%;
+}
