@@ -1,0 +1,193 @@
+ @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #001D21;
+	color: #D7D4DE;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	height: 100vh;
+	line-height: 1;
+	position: relative;
+
+	background-attachment: fixed;
+    background-image: url(../assets/ameen-fahmy-140090.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+h1 {
+	color: #002136;
+	font-size: 5em;
+	text-align: justify-all;
+	text-transform: uppercase;
+	line-height: .75em;
+}
+
+h3 {
+	font-size: 2em;
+	padding-bottom: .5em;
+}
+
+
+a {
+	color: #00AB98;
+	text-decoration: none;
+}
+footer p {
+	float: right;
+	padding: 2em;
+}
+
+main {
+	width: 50%;
+	padding-top: 1em;
+	margin: 10% auto 2% auto;
+}
+
+footer {
+	text-align: center;
+	background-color: rgba(238,238,238, 0.4);
+	border-top: 2px solid white;
+	padding-bottom: 2em;
+	/*	height: 20%;*/
+	/*clear: both;*/
+}
+
+footer nav	{
+	margin: .5em, auto;
+	padding-bottom: 2em;
+}
+
+footer nav a{
+	display: block;
+	width: 20%;
+	float: left;
+	padding-bottom: 2em;
+}
+
+nav a:hover {
+	background-color: #002136;
+}
+
+.wrap {
+	overflow: hidden;
+	margin: 10px;
+}
+
+.box {
+	float: left;
+	position: relative;
+	width: 20%;
+	padding-bottom: 20%;
+}
+
+.boxInner {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 10px;
+	overflow: hidden;
+}
+
+.boxInner img {
+    width: 100%;
+}
+
+.boxInner .titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+    
+
+.boxInner:hover .titleBox, .touch .boxInner .touchFocus .titleBox {
+    margin-bottom: 0;
+}
+
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+
+#queen{
+	border-top: 2px solid white;
+/*	margin-top: 1em;
+*/}
+
+
+@media only screen and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+    
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+	.wrap .box: nth-of-type(9) {
+		display: none;
+}
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+    
+    .box {
+        width: 33.3333%;
+        padding-bottom: 33.3333%;
+    }
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */    
+    
+    body {
+      font-size: 16px;
+	}
+    
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+}
+@media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+    
+    body {
+      font-size: 16px;
+	}
+
+	footer nav a {
+		float: none;
+		width: auto;
+		padding: 1em;
+	}
+
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+	}
+}
