@@ -1,0 +1,201 @@
+	@import url('https://fonts.googleapis.com/css?family=Quattrocento');
+	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {   
+    background: #000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	line-height: 1.1em;
+}
+
+h1 {
+	/*background: #F36BAB;*/
+	color: #fff;
+	font-size: 10em;
+	letter-spacing: -5px;
+	line-height: 0.5em;
+	padding-top: 20vh;
+    text-transform: uppercase;   
+}
+
+h2 {
+	/*background: #972549;*/
+	color: #E9857C;
+	font-size: 5em;
+	line-height: 1em;
+	margin: 0 auto;
+    padding: 15px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+h3 {
+	/*background: #843B58;*/
+	border-bottom: solid 5px #F8D6D3;
+	border-top: solid 5px #F8D6D3;
+	font-size: 3em;
+	line-height: 0.7em;
+	margin: 10px;
+/*	padding-top: 10px;
+*/  padding-bottom: 5px;
+    text-transform: lowercase;
+    width: 85vw;
+}
+
+p {
+	/*background: #6B2D50;*/
+	font-family: 'Quattrocento', serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+
+a {
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.5em;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+aside {
+	/*background: #B52113;*/
+	float: right;
+	padding-top: 30vh;
+	padding-right: 10px;
+	/*padding-bottom: 50px;*/
+	text-align: right;
+	width: 75%;
+}
+
+nav {
+	background: #FF5641;
+	padding: 20px;
+	text-align: right;
+}
+
+nav a {
+	text-align: right;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+
+
+footer {
+	/*background: #9F6152;*/
+	padding: 20px;
+	text-align: left;
+	width: 95%;
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.headsup {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.brownblock {
+	background-color: rgb( 32, 30, 31);
+}
+
+#fancy {
+	font-size: 2.5em;
+}
+
+#gallery {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#tagline {
+	/*background: #F2BF91;*/
+	float: left;
+}
+
+
+#flamingos {
+    background-attachment: fixed;
+    /*background-image: url(../assets/pidgy.jpg);*/
+    background-image: url(../assets/flamingos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+/*gallery style*/
+
+div.quad { 
+    background: rgb( 32, 30, 31); 
+    font-size: 0; 
+    width: 90%; 
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+  }
+div.quad figure { 
+    margin: 0; 
+    width: 50%; 
+    height: auto; 
+    transition: 1s; 
+    display: inline-block;
+    float: left;
+    position: relative; 
+    overflow: hidden; 
+  }
+
+div.quad figure:hover { cursor: pointer; z-index: 4; }
+div.quad figure img { width: 100%; height: auto; }
+div.quad figure:nth-child(1) { transform-origin: top left; }
+div.quad figure:nth-child(2) { transform-origin: top right; }
+div.quad figure:nth-child(3) { transform-origin: bottom left; }
+div.quad figure:nth-child(4) { transform-origin: bottom right; }
+div.quad figure figcaption { 
+    margin: 0; 
+    opacity: 0; 
+    background: rgba(0,0,0,0.3); 
+    color: #fff; 
+    padding: .3rem; 
+    font-size: 1.2rem; 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+    transition: 1s 1s opacity; 
+  }
+.expanded { transform: scale(2); z-index: 5;  }
+div.quad figure.expanded figcaption { opacity: 1; }
+div.full figure:not(.expanded) { pointer-events: none; }
+
+
+    
+
+@media only screen and (max-width : 880px) {
+      /* Tablet view: 1 tile */    
+    
+    body {
+      font-size: 16px;
+	}  	
+	div.quad figure {  
+    width: 80%; 
+    float: none;
+    margin: 0 auto;
+  	}
+}
+
