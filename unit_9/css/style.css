@@ -1,0 +1,276 @@
+	@import url('https://fonts.googleapis.com/css?family=Quattrocento');
+	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {   
+    background: #000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: right;
+}
+
+h1 {
+	color: #fff;
+	font-size: 8em;
+	letter-spacing: -3px;
+	line-height: 0.4em;
+	padding: 11vh 20px 15px 10px;
+    text-transform: uppercase;   
+}
+
+h2 {
+	color: #E9857C;
+	font-size: 4em;
+	line-height: 1em;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+p {
+	font-family: 'Quattrocento', serif;
+	/*font-size: 1.2em;*/
+}
+
+
+a {
+	color: #fff;
+	font-family: inherit;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+a:hover{
+	color: #E9857C;
+}
+
+aside {
+	float: right;
+	padding-top: 8vh;
+	padding-right: 20px;
+	width: 75%;
+}
+
+label {
+	display: block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+/*nav {
+	padding: 10px 0;
+}*/
+
+nav a:link {
+	display: block;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+nav a:visited{
+	color: #E9857C;
+}
+
+footer {
+	padding: 0 20px 10px 0;
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.headsup {
+	margin-right: 10px;
+}
+
+#brownblock {
+	background-color: rgb( 32, 30, 31);
+}
+
+#brownblock nav a:link {
+	float: left;
+	font-size: 1.5em;
+	margin: 2%;
+	padding: 10px 20px;
+	width: 16%;
+	display: block;
+}
+
+#fancy {
+	font-size: 2.5em;
+	line-height: 0.9em;
+}
+
+#flamingos {
+    background-attachment: fixed;
+    /*background-image: url(../assets/pidgy.jpg);*/
+    background-image: url(../assets/flamingos.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+#gallery {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#tagline {
+	border-bottom: solid 5px #F8D6D3;
+	border-top: solid 5px #F8D6D3;
+	font-size: 1.6em;
+	line-height: 1.2em;
+	margin: 8px;
+	padding: 10px 0 5px 0;
+    text-transform: lowercase;
+    width: 80vw;
+	float: left;
+}
+
+#toggle {
+	display: none;
+}
+
+#toggle:checked + nav {
+	display: block;
+}
+
+#topnav {
+	display: none;
+	padding: 0 20px;
+}
+
+/*gallery style*/
+
+div.quad { 
+    background: #000; 
+    font-size: 0; 
+    width: 100%; 
+    margin: 10px auto;
+    padding-top: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+  }
+div.quad figure { 
+    margin: 0; 
+    width: 50%; 
+    height: auto; 
+    transition: 1s; 
+    display: inline-block;
+    float: left;
+    position: relative; 
+    overflow: hidden; 
+  }
+
+div.quad figure:hover { cursor: pointer; z-index: 4; }
+div.quad figure img { width: 95%; height: auto; }
+div.quad figure:nth-child(1) { transform-origin: top left; }
+div.quad figure:nth-child(2) { transform-origin: top right; }
+div.quad figure:nth-child(3) { transform-origin: bottom left; }
+div.quad figure:nth-child(4) { transform-origin: bottom right; }
+div.quad figure figcaption { 
+    margin: 0; 
+    opacity: 0; 
+    background: rgba(0,0,0,0.3); 
+    color: #fff; 
+    padding: .3rem; 
+    font-size: 1.2rem; 
+    text-align: center;
+    position: absolute; 
+    bottom: 0; 
+    width: 80%;
+    transition: 1s 1s opacity; 
+  }
+.expanded { transform: scale(1.7); z-index: 5;  }
+div.quad figure.expanded figcaption { opacity: 1; }
+div.full figure:not(.expanded) { pointer-events: none; }
+
+
+    
+@media only screen and (max-width : 995px) {
+      /* Tablet view 2 tiles*/    
+
+ h2 {
+	font-size: 4.5em;
+    width: 100%;
+}
+
+  	nav a:link {
+	padding-top: 10px;
+}
+
+@media only screen and (max-width : 890px) {
+      /* Tablet view: 2 tiles */    
+    
+    body {
+      font-size: 17px;
+	}  	
+	
+	div.quad {   
+    width: 100%;
+  	}
+	
+	div.quad figure {   
+    float: none;
+    margin: 0 auto;
+	width: 100%;
+  	}
+}
+
+@media only screen and (max-width : 810px) {
+	h2 {
+	font-size: 4em;
+	}
+}
+
+@media only screen and (max-width : 710px) {
+      /* phone view: 1 tile */    
+
+    body {
+      font-size: 16px;
+	} 
+
+    h1 {
+	font-size: 7em;  
+	}
+    
+    nav {
+    padding-top: 10px;
+    }
+	
+	#brownblock nav a:link {
+	float: none;
+	font-size: 1em; 
+	line-height: 0.5em;
+	padding: 10px 30px;
+	width: 100%;
+
+}
+
+@media only screen and (max-width : 645px) {
+	
+	h2 {
+	font-size: 4em;
+	}
+
+}
+@media only screen and (max-width : 610px) {
+	
+	h2 {
+	font-size: 2.4em;
+	}
+}
